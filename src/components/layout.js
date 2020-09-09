@@ -70,7 +70,7 @@ const TemplateWrapper = ({ children }) => {
                 <span className="surname">topuria</span>
               </div>
               <div className="mt-container">
-                <img src="http://localhost:63342/mt/src/img/mariam_topuria.png?_ijt=p04q8rkc46vf7pv3jteh3il023"/>
+                <img src="/src/images/mariam_topuria.png"/>
               </div>
             </section>
             <footer className="flex-center">
