@@ -44,67 +44,63 @@ const TemplateWrapper = ({ children }) => {
         }
       `}
       render={data => (
-        <div className={`container ${showMenu ? "is-open" : ""}`}>
-          <HelmetDatoCms
-            favicon={data.datoCmsSite.faviconMetaTags}
-            seo={data.datoCmsHome.seoMetaTags}
-          />
-          <div className="container__sidebar">
-            <div className="sidebar">
-              <h6 className="sidebar__title">
-                <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
-              </h6>
-              <div
-                className="sidebar__intro"
-                dangerouslySetInnerHTML={{
-                  __html:
-                    data.datoCmsHome.introTextNode.childMarkdownRemark.html
-                }}
-              />
-              <ul className="sidebar__menu">
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About Us</Link>
-                </li>
-              </ul>
-              <p className="sidebar__social">
-                {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
-                  <a
-                    key={profile.profileType}
-                    href={profile.url}
-                    target="blank"
-                    className={`social social--${profile.profileType.toLowerCase()}`}
-                  >
-                    {" "}
-                  </a>
-                ))}
-              </p>
-              <div className="sidebar__copyright">
-                {data.datoCmsHome.copyright}
-              </div>
-            </div>
-          </div>
-          <div className="container__body">
-            <div className="container__mobile-header">
-              <div className="mobile-header">
-                <div className="mobile-header__menu">
-                  <button
-                    onClick={e => {
-                      e.preventDefault();
-                      setShowMenu(!showMenu);
-                    }}
-                  />
+
+          <div className="main-container">
+            <header>
+              <nav className="header-navigation flex-center">
+                <div className="nav-left">
+                  <ul className="header-nav flex-center helvetica-medium">
+                    <li className="nav-item">მთავარი</li>
+                    <li className="nav-item">ჩემ შესახებ</li>
+                    <li className="nav-item">პროცედურა</li>
+                    <li className="nav-item">ნამუშევრები</li>
+                  </ul>
                 </div>
-                <div className="mobile-header__logo">
-                  <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
+                <div className="nav-right">
+                  <ul className="flex-center helvetica-medium">
+                    <li className="nav-item">ხდკ</li>
+                    <li className="nav-item bg-white">კონტაქტი</li>
+                  </ul>
                 </div>
+              </nav>
+            </header>
+            <section id="container" className="section-container flex-center">
+              <div className="name-container emberly-black-narrow">
+                <span className="name">mariam</span>
+                <span className="surname">topuria</span>
               </div>
-            </div>
-            {children}
+              <div className="mt-container">
+                <img src="http://localhost:63342/mt/src/img/mariam_topuria.png?_ijt=p04q8rkc46vf7pv3jteh3il023"/>
+              </div>
+            </section>
+            <footer className="flex-center">
+              <div className="footer-section socials">
+                <ul className="flex-center">
+                  <li className="footer-item flex-center-vertically">
+                    <span className="helvetica-bold">Instagram</span>
+                    <span className="public-sans-light">@skincare</span>
+                  </li>
+                  <li className="footer-item flex-center-vertically">
+                    <span className="helvetica-bold">Facebook</span>
+                    <span className="public-sans-light">@skincaregeorgia</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-section contact">
+                <ul className="flex-center">
+                  <li className="footer-item flex-center-vertically">
+                    <span className="helvetica-bold">მისამართი</span>
+                    <span className="public-sans-light">Lake Adolphus</span>
+                  </li>
+                  <li className="footer-item flex-center-vertically">
+                    <span className="helvetica-bold">ნომერი</span>
+                    <span className="public-sans-light">599 98 98 98</span>
+                  </li>
+                </ul>
+              </div>
+            </footer>
           </div>
-        </div>
+
       )}
     />
   );
