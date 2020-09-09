@@ -8,6 +8,7 @@ import { HelmetDatoCms } from "gatsby-source-datocms";
 
 import "../styles/index.sass";
 
+
 const TemplateWrapper = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -43,6 +44,7 @@ const TemplateWrapper = ({ children }) => {
           }
         }
       `}
+
       render={data => (
 
           <div className="main-container">
@@ -70,7 +72,7 @@ const TemplateWrapper = ({ children }) => {
                 <span className="surname">topuria</span>
               </div>
               <div className="mt-container">
-                <img src="/src/images/mariam_topuria.png"/>
+                <img src={"/mariam_topuria.png"}/>
               </div>
             </section>
             <footer className="flex-center">
@@ -103,6 +105,7 @@ const TemplateWrapper = ({ children }) => {
 
       )}
     />
+
   );
 };
 
