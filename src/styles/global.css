@@ -53,6 +53,10 @@ body, html {
   font-smoothing: antialiased;
 }
 
+body {
+  cursor: url('/cursor.svg'), auto;
+}
+
 ol, ul {
   list-style: none;
 }

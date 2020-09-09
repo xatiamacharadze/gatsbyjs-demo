@@ -8,7 +8,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
-    `gatsby-env-variables`,
     {
       resolve: `gatsby-source-datocms`,
       options: {
