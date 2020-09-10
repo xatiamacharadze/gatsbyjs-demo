@@ -85,6 +85,10 @@ table {
   pointer-events: none;
 }
 
+.bolder {
+  font-weight: bolder;
+}
+
 .fs-10 {
   font-size: 10px;
 }
