@@ -71,6 +71,11 @@
     margin: 0 100px;
   }
 
+  .mt-logo {
+    height: 70px;
+    width: 70px;
+  }
+
 }
 
 @media screen and (max-width: 1450px) {
@@ -126,8 +131,17 @@
   }
 
   .name-container {
-    margin: 0 15%;
-    width: 70%;
+    /*margin: 0 15%;*/
+    /*width: 70%;*/
+
+    margin: 0 80px;
+    width: 100%;
+    line-height: 0.9;
+  }
+
+  .mt-logo {
+    height: 60px;
+    width: 60px;
   }
 
 }

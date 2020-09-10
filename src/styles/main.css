@@ -3,7 +3,7 @@ body {
   /*radial-gradient(ellipse 100% 0% at 0% 100%, rgb(255, 179, 108) 0%, rgb(203, 184, 184) 100%);*/
   background: linear-gradient(230deg, rgba(255, 193, 193, 0.7), rgba(166, 166, 166, 0.6), rgba(207, 173, 143, 1), rgb(203, 184, 184));
   background-size: 300% 300%;
-  animation: gradient 12s ease infinite;
+  animation: gradient 20s ease infinite;
 }
 
 @keyframes gradient {
@@ -106,4 +106,14 @@ body {
 
 .footer-section .footer-item:last-child {
   margin-right: 0;
+}
+
+.mt-logo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 80px;
+  width: 80px;
+  justify-content: center;
 }
