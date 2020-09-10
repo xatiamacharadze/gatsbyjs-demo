@@ -1,4 +1,9 @@
 @media screen and (max-width: 900px) {
+
+  .fs-40 {
+    font-size: 40px;
+  }
+
   .header-responsive-container {
     display: flex;
   }
@@ -46,6 +51,14 @@
 
 @media screen and (max-width: 500px) {
 
+  .name-container .surname {
+    text-align: left;
+  }
+
+  .name-container {
+    font-size: 29vw !important;
+    margin: 0 20px 40%;
+  }
 
 }
 
