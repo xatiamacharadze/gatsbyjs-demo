@@ -45,7 +45,7 @@
   }
 
   .name-container {
-    font-size: 40.5vh;
+    font-size: 35.5vh;
   }
 
 
@@ -149,6 +149,10 @@
     padding: 13px 40px;
   }
 
+  .name-container {
+    font-size: 33.5vh;
+  }
+
 }
 
 @media screen and (max-width: 1350px) {
@@ -200,5 +204,16 @@
   .fs-50 {
     font-size: 26px;
   }
+
+
+  .name-container {
+    font-size: 30.5vh;
+  }
+
+  .mt-container img {
+    /* width: 35%; */
+    width: 57vh;
+  }
+
 
 }

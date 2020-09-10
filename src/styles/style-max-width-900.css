@@ -1,5 +1,24 @@
 @media screen and (max-width: 900px) {
 
+  .header-navigation {
+    display: none;
+  }
+
+  .name-container {
+    margin: 0 30px;
+  }
+
+  .name-container {
+    font-size: 12.5vh !important;
+    margin: 0 30px 40%;
+  }
+
+  .mt-container img {
+    /* width: 35%; */
+    width: 80%;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -28,6 +47,11 @@
 }
 
 @media screen and (max-width: 340px) {
+
+  .name-container {
+    font-size: 10.5vh !important;
+    margin: 0 20px 40%;
+  }
 
 }
 
