@@ -203,22 +203,22 @@ export default class TemplateWrapper extends Component {
                         </div>
                     </div>
                     <nav className={`sidebar bg-white ${this.state.open ? `open` : ""}`}>
-                        <ul className="public-sans-thin bolder fc-black">
+                        <ul className="public-sans-thin fc-black">
                             <li className="nav-item">Main</li>
                             <li className="nav-item">About me</li>
                             <li className="nav-item">Procedures</li>
                             <li className="nav-item">Works</li>
                             <li className="nav-item">FAQ</li>
-                            <li className="nav-item bg-black fc-white">Contact</li>
-                            <li className="footer-item flex-center-vertically fc-black">
+                            <li className="nav-item contact bg-black fc-white">Contact</li>
+                            <li className="flex-column fc-black">
                                 <span className="public-sans-thin bolder">Instagram</span>
                                 <span className="public-sans-light">@skincare</span>
                             </li>
-                            <li className="footer-item flex-center-vertically fc-black">
+                            <li className="flex-column fc-black">
                                 <span className="public-sans-thin bolder">Facebook</span>
                                 <span className="public-sans-light">@skincaregeorgia</span>
                             </li>
-                            <li className="footer-item flex-center-vertically fc-black">
+                            <li className="flex-column fc-black">
                                 <span className="public-sans-thin bolder">Mobile</span>
                                 <span className="public-sans-light">599 98 98 98</span>
                             </li>
