@@ -1,4 +1,7 @@
 @media screen and (max-width: 900px) {
+  .header-responsive-container {
+    display: flex;
+  }
 
   .header-navigation {
     display: none;
@@ -16,6 +19,16 @@
   .mt-container img {
     /* width: 35%; */
     width: 80%;
+  }
+
+  .mt-logo {
+    height: 75px;
+    width: auto;
+  }
+
+  .header-responsive-container {
+    height: 75px;
+    padding: 0 20px;
   }
 
 
@@ -51,6 +64,24 @@
   .name-container {
     font-size: 10.5vh !important;
     margin: 0 20px 40%;
+  }
+
+  .mt-logo {
+    height: 60px;
+  }
+
+  .header-responsive-container {
+    height: 60px;
+  }
+
+  .burger-menu .bar1, .burger-menu .bar2, .burger-menu .bar3 {
+    height: 2px;
+    margin: 3px 0;
+  }
+
+  .burger-menu.open .bar1, .burger-menu.open .bar2, .burger-menu.open .bar3 {
+    height: 3px;
+    margin: 6px 0;
   }
 
 }

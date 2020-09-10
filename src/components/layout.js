@@ -192,7 +192,7 @@ export default class TemplateWrapper extends Component {
                     </div>
                 </nav>
                 <div className="header-responsive">
-                    <div className="flex-center bg-white">
+                    <div className="header-responsive-container flex-center bg-white">
                         <div className={`burger-menu ${this.state.open ? `open` : ""}`} onClick={() => this.toggleMenu()}>
                             <div className="bar1"></div>
                             <div className="bar2"></div>
