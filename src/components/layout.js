@@ -156,8 +156,8 @@ export default class TemplateWrapper extends Component {
 
   componentDidMount() {
     document.addEventListener('mousemove', (e) => {
-      this.parallaxIt(e, '#nameContainer', -40);
-      this.parallaxIt(e, '#mtContainer', -20);
+      this.parallaxIt(e, '#nameContainer', -20);
+      this.parallaxIt(e, '#mtContainer', -30);
     });
 
   }
