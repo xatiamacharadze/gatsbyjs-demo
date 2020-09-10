@@ -74,15 +74,33 @@ header
   nav
     height: 100%
 
+
 .sidebar
   transform: translate(-100%, 0)
   transition: all 1s
 
   &.open
     transform: translate(0, 0)
+
+  ul
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: space-between
+    top: -75px
+    padding: 100px 20px 20px 20px
+
+  .contact
+    text-align: center
+    display: block
+    padding: 16px
+
+
 .burger-menu
   display: inline-block
   cursor: pointer
+  z-index: 10
 
   .bar1, .bar2, .bar3
     width: 22px
