@@ -84,6 +84,11 @@
     margin: 6px 0;
   }
 
+  .sidebar ul {
+    top: -60px;
+    padding: 70px 20px 20px 20px;
+  }
+
 }
 
 @media screen and (max-height: 500px) {

@@ -222,6 +222,10 @@ export default class TemplateWrapper extends Component {
                                 <span className="public-sans-thin bolder">Mobile</span>
                                 <span className="public-sans-light">599 98 98 98</span>
                             </li>
+                            <li className="flex-column fc-black">
+                                <span className="public-sans-thin bolder">Address</span>
+                                <span className="public-sans-light">Lake Adolphus</span>
+                            </li>
                         </ul>
                     </nav>
                 </div>
