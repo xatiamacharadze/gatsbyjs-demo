@@ -60,3 +60,45 @@
 .sidebar__copyright
   color: $light-body-color
   font-size: 13px
+
+header
+  z-index: 100
+
+.header-responsive
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+  nav
+    height: 100%
+
+.sidebar
+  transform: translate(-100%, 0)
+  transition: all 1s
+
+  &.open
+    transform: translate(0, 0)
+.burger-menu
+  display: inline-block
+  cursor: pointer
+
+  .bar1, .bar2, .bar3
+    width: 22px
+    height: 3px
+    background-color: black
+    margin: 6px 0
+    transition: 0.4s
+
+  &.open
+    .bar1
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px)
+      transform: rotate(-45deg) translate(-6px, 6px)
+
+    .bar2
+      opacity: 0
+
+    .bar3
+      -webkit-transform: rotate(45deg) translate(-6px, -8px)
+      transform: rotate(45deg) translate(-6px, -8px)
